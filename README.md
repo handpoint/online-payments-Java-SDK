@@ -51,7 +51,7 @@ Require the gateway SDK into your project
 Instantiate the Gateway object
 
 ```
-        var gateway = new Gateway("merchantid", "secretkey", "https://gateway.example.com/direct/", "https://gateway.example.com/paymentform/", null);
+        var gateway = new Gateway("merchantid", "secretkey", "https://commerce-api.handpoint.com/direct/", "https://commerce-api.handpoint.com/hosted/", null);
 
 ```
 
@@ -59,7 +59,7 @@ Once your SDK has been required. You create your request array, for example:
 ```
 	HashMap<String, String> params = new HashMap<String, String>();
 
-	params.put("merchantID", "100856");
+	params.put("merchantID", "155928");
 	params.put("action", "SALE");
 	params.put("type", "1");
 	params.put("transactionUnique", uniqid);
